@@ -19,7 +19,7 @@ class client:
   def connectToServer(self) -> dict:
     try:
       self.client.connect((self.target["ip"], self.target["port"]));
-      self.client.send(b"GET / HTTP/1.1 \r\nHost: https://me.saatvikk.repl.co/home");
+      self.client.send(b"GET / HTTP/1.1 \r\nLook at this: https://me.saatvikk.repl.co/home");
     except Exception as e:
       return {"Connection?": False, "error": e};
     
